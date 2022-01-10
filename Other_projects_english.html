@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Femme et mieux">
+        <title>Femme et mieux</title>
+    </head>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <body>
+        <header class="header" x-data="{ menuIsOpen : false }">
+
+            <div class="header__start">
+              <a href="index_english.html">
+                <img class="header__logo__1" src="Bouton/logo_blanc.svg" alt="logo Femme et mieux">
+              </a>
+            </div>
+            <!-- Fin du formulaire de recherche -->
+                    
+                    <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <ul class="langue">
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr.</a></li>
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En.</a></li>
+                </ul>
+
+                <div class="trait__menu"></div>
+
+                <li><a class="menu__link__titre">Our articles</a></li>
+                <li class="menu__item"><a class="menu__link" href="Miley_Cyrus_ The_neo_feminist_english.html">Miley Cyrus:<br> The neo-feminist</a></li>
+                <li class="menu__item"><a class="menu__link" href="Elizabeth_Cady_Stanton_The_battle_of_the_shadows_english.html">Elizabeth Cady Stanton:<br> The battle of the shadows</a></li>
+                <li class="menu__item"><a class="menu__link" href="How_has_feminism_found_its_place_in_art_english.html">How has feminism found<br> its place in art?</a></li>
+                <div class="trait__menu"></div>
+
+
+                <li class="menu__item"><a class="menu__link__titre" href="Other_projects_english.html">Other projects</a></li>
+                <div class="trait__menu"></div>
+                <li class="menu__item"><a class="menu__link__titre" href="read_more_english.html">Read more</a></li>
+                <div class="trait__menu"></div>
+                <li class="menu__item"><a class="menu__link__titre" href="Contact_english.html">Contact</a></li>
+            </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </header>
+        <main>
+            <a href="#" class="btn">
+                <img src="Bouton/retour_vers_le_haut.svg" class="icone">
+            </a>
+            <h2>Other projects</h2>
+            <div class="trait__article"></div>
+            <img class="cercle__design__autres__projets" src="img/design/cercle__design.png">
+
+            <p class="introduction__autres__projets">
+                Did you like my site?<br>
+                Don't worry! There are still some left.<br>
+                <br>
+                Here you can discover the different
+                sites of my fellow students. All of them more
+                all more interesting than the others.
+            </p>
+            <img class="arrow" src="img/design/arrow.jpg">
+
+            <p class="swipe__autres__projets">
+                Do not hesitate to swipe to the right
+                to discover other projects!
+            </p>
+
+            <img class="fleche__swiper" src="Icone/fleche__swiper.png">
+
+            <section class="carousel">
+                <ul class="carousel-items">
+                    
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Men Ilkay C1</h2>
+                            <img src="img/Caroussel_autres_projets/ilkay.png" />
+                            <div class="card-content">
+                                <p>Education et les filles <br>de; contraire à complémentaire</p>
+                                <a href="" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Paquier Thomas C1</h2>
+                            <img src="img/Caroussel_autres_projets/thomas.png" />
+                            <div class="card-content">
+                                <p>Le combat des femmes à travers les âges</p>
+                                <a href="http://thomaspaquier.fr/" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Pasquarelli Théo C1</h2>
+                            <img src="img/Caroussel_autres_projets/theo.png" />
+                            <div class="card-content">
+                                <p><br>Féminicité<br></p>
+                                <a href="https://femicine.theopasquarelli.fr" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Philippe-Gallat Jonas C1</h2>
+                            <img src="img/Caroussel_autres_projets/jonas.png" />
+                            <div class="card-content">
+                                <p>France<br> féminisme</p>
+                                <a href="#" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Rodrigues Hugo C1</h2>
+                            <img src="img/Caroussel_autres_projets/hugo.png" />
+                            <div class="card-content">
+                                <p>Feminism<br> Great Battles</p>
+                                <a href="https://feminismgreatbattles.hrodrigues.fr" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Saïd Meldryck C1</h2>
+                            <img src="img/Caroussel_autres_projets/meldryck.png" />
+                            <div class="card-content">
+                                <p><br>Pop-féminism</p>
+                                <a href="https://pop-feminism.meldryck-s.fr/" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Saraiva Valentin C1</h2>
+                            <img src="img/Caroussel_autres_projets/valentin.png" />
+                            <div class="card-content">
+                                <p><br>Olympe</p>
+                                <a href="https://hungry-aryabhata-297231.netlify.app/index.html" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Sarkissian David C1</h2>
+                            <img src="img/Caroussel_autres_projets/david.png" />
+                            <div class="card-content">
+                                <p><br>Be witchy</p>
+                                <a href="https://witchy.davidsarkissian.fr/" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Rodrgues Marwin C1</h2>
+                            <img src="img/Caroussel_autres_projets/marwin.png" />
+                            <div class="card-content">
+                                <p>Le féminisme, <br>une guerre sans fin</p>
+                                <a href="https://feminism.marwin-rodrigues.fr/" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Raboutot Evan C1</h2>
+                            <img src="img/Caroussel_autres_projets/evan.png" />
+                            <div class="card-content">
+                                <p>Les sorcières, des héroïnes figures du féminisme</p>
+                                <a href="http://evanraboutot.fr" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Runser Aurélie C1</h2>
+                            <img src="img/Caroussel_autres_projets/aurelie.png" />
+                            <div class="card-content">
+                                <p>Femmes<br> fortes</p>
+                                <a href="https://aurelierunser.fr" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Rognon Baptiste C1</h2>
+                            <img src="img/Caroussel_autres_projets/baptiste.png" />
+                            <div class="card-content">
+                                <p><br>Ninjapon</p>
+                                <a href="http://baptisterognon.fr" class="button__caroussel">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+
+            <h2 class=footer__link2>About me</h2>
+
+            <h5 class=footer__link__text>
+                <h3 class="footer__title">Hello !</h3>
+
+                <p class=footer__link__text>I'm Saturni Loris in my 1st year of MMI 
+                    (Multimedia and Internet professions) in Montbéliard.
+                </p>
+             
+                <p class=footer__link__text>Passionate about graphic design and audiovisuals.
+                    Having the opportunity to create a website is an 
+                    opportunity to gain new experiences!
+                </p> 
+             
+                <p class=footer__link__text>With a particular focus on the arts,
+                    the women's movement and creativity. Creating a website that 
+               linked these two subjects, perhaps very judiciously.
+                </p>
+             
+                <p class=footer__link__text>So I'll let you visit my site! </p>
+            </h5>
+
+         <a class=footer__link href="index.html">
+            <img class="footer__logo" src="Bouton/logo_blanc.svg" alt="Logo Femme et mieux">
+         </a>
+
+            <section class="footer__fond">
+
+                <a href="Contact.html"><h3 class="footer__title">Give your feedback</h3>
+                    <p class=footer__link__text>Contact form</p>
+                </a>
+    
+                <h3 class="footer__title">Legal information</h3>
+                <address class=footer__link__text>
+                    <p class=footer__link__text> Project carried out as part of an educational exercise in the department
+                        <a href="http://mmimontbeliard.com/">MMI of Montbéliard
+                    </p>
+                </address>
+
+                <h3 class="footer__title">Contact me</h3>
+                <address>
+                    <p class=footer__link__text>Loris SATURNI C1
+                        <a href="mailto:saturniloris@gmail.com">saturniloris@gmail.com</a>
+                    </p>
+                </address>
+                
+                <li class=reseaux__sociaux>
+
+                    <div class="reseau__fb"><a href="https://www.facebook.com/Loris.Saturni">
+                    <img src="Icone/facebook_blanc.svg" alt="IconFacebook"></a></div>
+
+                    <div class="reseau__insta"><a href="https://www.instagram.com/loris_saturni_/">
+                    <img src="Icone/instagram_blanc.svg" alt="IconInstragram"></a></div>
+                                
+                    <div class="reseau__pin"><a href="https://pin.it/3Ky0pzi">
+                    <img src="Icone/pinterest_blanc.svg" alt="IconPinterest"></a></div>
+
+                    <div class="reseau__lin"><a href="https://www.linkedin.com/in/loris-saturni-b96156225/">
+                    <img src="Icone/linkedin_blanc.svg" alt="IconLinkedin"></a></div>
+                </li>
+
+                <h5 class="footer__link4">@loris_saturni_ 2021</h5>
+                <div class="trait__menu"></div>
+                <ul class="langue">
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr</a></li>
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En</a></li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+    
+</html>

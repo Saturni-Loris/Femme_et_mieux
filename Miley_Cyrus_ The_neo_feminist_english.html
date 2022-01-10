@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Femme et mieux">
+        <title>Femme et mieux</title>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <body>
+        <header class="header" x-data="{ menuIsOpen : false }">
+
+            <div class="header__start">
+              <a href="index_english.html">
+                <img class="header__logo__1" src="Bouton/logo_blanc.svg" alt="logo Femme et mieux">
+              </a>
+            </div>
+
+            
+            <!-- Fin du formulaire de recherche -->
+                    
+                    <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <ul class="langue">
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr.</a></li>
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En.</a></li>
+                </ul>
+
+                <div class="trait__menu"></div>
+
+                <li><a class="menu__link__titre">Our articles</a></li>
+                <li class="menu__item"><a class="menu__link" href="Miley_Cyrus_ The_neo_feminist_english.html">Miley Cyrus:<br> The neo-feminist</a></li>
+                <li class="menu__item"><a class="menu__link" href="Elizabeth_Cady_Stanton_The_battle_of_the_shadows_english.html">Elizabeth Cady Stanton:<br> The battle of the shadows</a></li>
+                <li class="menu__item"><a class="menu__link" href="How_has_feminism_found_its_place_in_art_english.html">How has feminism found<br> its place in art?</a></li>
+                <div class="trait__menu"></div>
+
+
+                <li class="menu__item"><a class="menu__link__titre" href="Other_projects_english.html">Other projects</a></li>
+                <div class="trait__menu"></div>
+                <li class="menu__item"><a class="menu__link__titre" href="read_more_english.html">Read more</a></li>
+                <div class="trait__menu"></div>
+                <li class="menu__item"><a class="menu__link__titre" href="Contact_english.html">Contact</a></li>
+            </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </header>
+        <main> 
+            <article>
+                <a href="#" class="btn">
+                    <img src="Bouton/retour_vers_le_haut.svg" class="icone">
+                </a>
+                <article>
+                    <h2>Miley Cyrus, la nouvelle féministe</h2>
+                    <div class="trait__article"></div>
+                    <section>
+                        <p class="introduction__article">
+                            Miley devient de plus en plus une icône <span class=span__mots__cles>féministe</span><br>
+                            grâce à sa liberté d'expression sans limites.<br>
+                            Aux Etats-Unis, malgré les nombreuses polémiques<br>
+                            qui lui collent au dos. Miley est une des nouvelles stars<br>
+                            les plus engagée sur le <span class=span__mots__cles>néo-féminisme!</span></p>
+                        </p>
+                    </section>
+
+                <section><h1 class="sous__titre__article">Miley aime choquer pour prouver</h1>
+                    <div class="trait_dessus"></div>
+                    <p class="textes__article">Depuis de nombreuses années. Notre féministe <span class=span__mots__cles>Miley</span>
+                        adore faire parler d'elle, avec sa liberté d'expression
+                        sans limites.
+                        Que ce soit par rapport à ces clips, ces paroles ou actes.
+                        Elle aime passer des messages par le biais
+                        de la provocation. 
+                        Ces messages souvent portés sur le féminisme.
+                        Comme son clip "MOTHER’S DAUGHTER" sortie en 2019 qui
+                        a beaucoup fait parler, en bien, mais également en mal. 
+                    </p>
+
+                    <figure>
+                        <img src="img/Miley_Cyrus/Miley_Cyrus_1.svg" alt="Miley Cyrus">
+                        <figcaption>Miley Cyrus qui reprend MOTHER’S DAUGHTER en concert</figcaption>
+                    </figure>
+
+                    <p class="textes__article"> En effet dans le clip réalisé par Marc Jacobs,
+                        elle expose de nombreuses personnes de différentes
+                        <span class=span__mots__cles>classes sociales.</span>
+                        
+                        Comme une femme donnant le sein à son enfant
+                        devant d'autres personnes.
+                        Un mannequin trans et handicapé ou encore
+                        une femme enceinte. 
+                        Miley expose avec fierté ces différentes têtes. Qui sont
+                        souvent jugé ou exclu de notre société.
+                        
+                        Le but de <span class=span__mots__cles>Miley Cyrus</span> est de prouver aux femmes
+                        qu'elles peuvent vivre tout en s'assumant pleinement.
+                    </p>
+
+                    <figure>
+                        <img src="img/Miley_Cyrus/Miley_Cyrus_2.svg" alt="Miley Cyrus">
+                        <figcaption>Miley Cyrus</figcaption>
+                    </figure>
+
+                    <p class="textes__article"> Il n'y a pas que dans les clips qu’elle prouve son côté
+                        féministe. Les réseaux sociaux lui sont également une
+                        grande source d'inspiration. Le fait que les hommes
+                        post des photos torse-nu sur Instagram.
+                        
+                        Sans interdiction contrairement aux femmes.
+                        Qui elles n'ont aucun droit de photos légèrement
+                        dénudées.
+                        Elle s'est donc engagée dans le mouvement
+                        "Free the nipple".
+                        
+                        Elle n'hésite pas à publier des photos intimes de sa vieprivée. Pour <span class=span__mots__cles>choquer</span> et montrer à toutes les femmes
+                        qu'elles ont tous les droits sur leurs corps.
+                    </p>
+
+                    <figure>
+                        <img src="img/Miley_Cyrus/Miley_Cyrus_3.svg" alt="Miley Cyrus au MTV Music Awards">
+                        <figcaption>Miley Cyrus au MTV Music Awards</figcaption>
+                    </figure>
+                </section>
+
+                <section><h1 class="sous__titre__article">Son combat pour l'avortement</h1>
+                    <div class="trait__article"></div>
+                    <p class="textes__article">De nos jours, il reste encore de nombreux états
+                        d'Amérique ou <span class=span__mots__cles>l'avortement</span> est interdit. Comme
+                        au Texas ou de plus en plus de loi surgissent, pour
+                        interdire l'IVG.
+                        
+                        Ces femmes deviennent impuissantes face à ces lois.
+                        Elles plongent de jour en jour dans l'interdiction
+                        de disposer de leurs corps.
+                        
+                        Même dans des situations de viol, de maladie, ou de
+                        danger, l'IVG reste maintenue.
+                        Sur l'Instagram de Miley, elle a posté de nombreux
+                        postes durant cette polémique.
+                        Un gâteau avec comme inscription
+                        "Abortion Is Healthcare" (l'Avortement, c'est une
+                        question de santé). À travers cette photo de plus de
+                        4 millions de likes.
+                        
+                        Miley touche de nombreuses femmes à travers cette
+                        photo qui passe un message fort.
+                    </p>
+                </section>
+
+                <section><h1 class="sous__titre__article">Scandaliser n'est pas sans risques</h1>
+                    <div class="trait__article"></div>
+                    <p class="textes__article">Violence physique ou sexuelle, remarque, insulte ou
+                        sifflement, beaucoup de femmes subissent du harcèlement de rue.
+                        Partout dans le monde, de plus en plus de femmes se
+                        sentent oppressées en ville. Plus de <br><span class=span__mots__cles>7 femmes sur 10</span>
+                        ont déjà subi des remarques sexistes sur elle.
+                        
+                        Dans ce sondage que nous avons réalisé, sur peu
+                        de réponses (40 environs). Plus de deux tiers des
+                        femmes ont subi de l’harcèlement.
+                    </p>
+
+                    <figure>
+                        <img src="img/Miley_Cyrus/graphique.svg"Google Forms, par Loris Saturni">
+                        <figcaption><a href=https://forms.gle/7s8NFgyQ3WzQdhsz7>
+                            Google Forms, par Loris Saturni
+                        </figcaption></a>
+                    </figure>
+
+                    <p class="textes__article"> Miley est bien concernée pour des histoires
+                        d'harcèlement de rue. En 2019 lors d'une promenade
+                        dans les rues de Barcelone. <span class=span__mots__cles>Miley</span> se fait accoster par un
+                        homme qui la tire par le bras.
+                        
+                        Et l'oblige à l'embrasser. La chanteuse pleine de
+                        courage le repousse en l'insult
+                        Un beau message pour les femmes.
+                    </p>
+                </section>
+
+                <section><h1 class="sous__titre__article">Un message féministe internationale</h1>
+                    <div class="trait__article"></div>
+                    <p class="textes__article">Il y a de plus en plus de chanteuse exprimant leurs
+                        envies d'égalité. Beyoncé dans de nombreux morceaux.
+                        Mais plus internationalement, la chanteuse Belge
+                        Angèle.
+                        Qui fait beaucoup parler d'elle avec son morceau
+                        "Balance ton quoi" sortie en 2019 qui fait référence au
+                        <span class=span__mots__cles>mouvement féministe</span> "Balance ton porc".
+                        
+                        Mais le mouvement féminisme ne se situe pas
+                        seulement dans la musique urbaine ! Contrairement à
+                        ce que beaucoup de personnes pourrait penser, même
+                        dans le hip-hop on en trouve
+                    </p>
+
+                    <figure>
+                        <img src="img/Miley_Cyrus/Lujipeka.svg" alt="Lujipeka">
+                        <figcaption>Lujipeka</figcaption>
+                    </figure>
+
+                    <p class="textes__article">Comme le dit un jeune rappeur Lujipeka dans
+                        musiques. Le soleil ou Hula Hoop : « Balance ton c
+                        ou ton porc n’aie pas peur » ou « J’soutien
+                        mouvement #Meto
+                        Des paroles parmi d’autres nombreuses. Qui prouve
+                        le féminisme est de plus en plus présent pour tout le
+                        monde
+                        Miley est devenu et restera une féministe engagée
+                        n'hésite pas à dire ce qu'elle pe
+        
+                        Afin de montrer à toutes les femmes du monde. Qu'elles
+                        sont libres de leurs libertés <span class=span__mots__cles>d'expressions</span>
+                    </p>
+                </section>
+            </article>
+            <section>
+                <div class="trait__aimez__vous"></div>
+                <h2 class="aimez__vous">Vous avez aimé?</h2>
+                <h3 class="autre__articles">Pas de soucis.<br>
+                    N’hésitez pas à lire <br>
+                    d'autres articles ci-dessous!
+                </h3>
+        
+                <article>
+                    <a href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">
+                    <h2 class="titre__vignette">Comment le féminisme a-t-il trouvé<br> sa place dans l’art ?</h2>
+                    <img src="img/page_accueuil/Les_tirs.webp" alt="Tableau Les tirs par Niki de Saint Phalle"></a>
+
+                    <a href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">
+                        <h3 class="sous__titre__vignette"> Découvrez comment les femmes ont réussi à 
+                            trouver leur place dans l'art. Après leurs nombreux combats
+                        </h3>
+                    </a>
+                </article>
+            </section>
+    </main>
+    <footer class="footer">
+
+        <h2 class=footer__link2>About me</h2>
+
+        <h5 class=footer__link__text>
+            <h3 class="footer__title">Hello !</h3>
+
+            <p class=footer__link__text>I'm Saturni Loris in my 1st year of MMI 
+                (Multimedia and Internet professions) in Montbéliard.
+            </p>
+         
+            <p class=footer__link__text>Passionate about graphic design and audiovisuals.
+                Having the opportunity to create a website is an 
+                opportunity to gain new experiences!
+            </p> 
+         
+            <p class=footer__link__text>With a particular focus on the arts,
+                the women's movement and creativity. Creating a website that 
+           linked these two subjects, perhaps very judiciously.
+            </p>
+         
+            <p class=footer__link__text>So I'll let you visit my site! </p>
+        </h5>
+
+     <a class=footer__link href="index.html">
+        <img class="footer__logo" src="Bouton/logo_blanc.svg" alt="Logo Femme et mieux">
+     </a>
+
+        <section class="footer__fond">
+
+            <a href="Contact.html"><h3 class="footer__title">Give your feedback</h3>
+                <p class=footer__link__text>Contact form</p>
+            </a>
+
+            <h3 class="footer__title">Legal information</h3>
+            <address class=footer__link__text>
+                <p class=footer__link__text> Project carried out as part of an educational exercise in the department
+                    <a href="http://mmimontbeliard.com/">MMI of Montbéliard
+                </p>
+            </address>
+
+            <h3 class="footer__title">Contact me</h3>
+            <address>
+                <p class=footer__link__text>Loris SATURNI C1
+                    <a href="mailto:saturniloris@gmail.com">saturniloris@gmail.com</a>
+                </p>
+            </address>
+            
+            <li class=reseaux__sociaux>
+
+                <div class="reseau__fb"><a href="https://www.facebook.com/Loris.Saturni">
+                <img src="Icone/facebook_blanc.svg" alt="IconFacebook"></a></div>
+
+                <div class="reseau__insta"><a href="https://www.instagram.com/loris_saturni_/">
+                <img src="Icone/instagram_blanc.svg" alt="IconInstragram"></a></div>
+                            
+                <div class="reseau__pin"><a href="https://pin.it/3Ky0pzi">
+                <img src="Icone/pinterest_blanc.svg" alt="IconPinterest"></a></div>
+
+                <div class="reseau__lin"><a href="https://www.linkedin.com/in/loris-saturni-b96156225/">
+                <img src="Icone/linkedin_blanc.svg" alt="IconLinkedin"></a></div>
+            </li>
+
+            <h5 class="footer__link4">@loris_saturni_ 2021</h5>
+            <div class="trait__menu"></div>
+            <ul class="langue">
+                <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr</a></li>
+                <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En</a></li>
+            </ul>
+        </section>
+    </footer>
+    </body>
+</html>
