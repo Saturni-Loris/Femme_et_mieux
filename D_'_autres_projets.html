@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Femme et mieux">
+        <title>Femme et mieux</title>
+    </head>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <body>
+        <header class="header" x-data="{ menuIsOpen : false }">
+
+            <div class="header__start">
+              <a href="/">
+                <img class="header__logo" src="Bouton/logo_blanc.svg" alt="logo Femme et mieux">
+              </a>
+            </div>
+
+            <!-- Fin du formulaire de recherche -->
+                    
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    </button>
+
+    <!-- Menu principal -->
+    <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+        <li class="menu__item"><a class="menu__link__titre" href="index.html">Fr</a></li>
+        <li class="menu__item"><a class="menu__link__titre" href="index_english.html">En</a></li>
+        <div class="trait__menu"></div>
+
+        <li><a class="menu__link__titre">Nos articles</a></li>
+        <li class="menu__item"><a class="menu__link" href="Miley_Cyrus_,_la_nouvelle_féministe.html">Miley Cyrus: La  néo-féministe </a></li>
+        <li class="menu__item"><a class="menu__link" href="Le_combat_féministe_de_l_'_ombre.html">Elizabeth Cady Stanton:<br> Le combat de l’ombre</a></li>
+        <li class="menu__item"><a class="menu__link" href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">Comment le féminisme a-t-il trouvé<br> sa place dans l’art ?</a></li>
+        <div class="trait__menu"></div>
+
+
+        <li class="menu__item"><a class="menu__link__titre" href="D_'_autres_projets.html">D'autres projets</a></li>
+        <div class="trait__menu"></div>
+        <li class="menu__item"><a class="menu__link__titre" href="En_savoir_plus.html">En savoir +</a></li>
+        <div class="trait__menu"></div>
+        <li class="menu__item"><a class="menu__link__titre" href="Contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    <!-- Fin du menu principal -->
+        </header>
+        <main>
+            <a href="#" class="btn">
+                <img src="Bouton/retour_vers_le_haut.svg" class="icone">
+            </a>
+            <h2>D'autres projets</h2>
+            <div class="trait__article"></div>
+            <img class="cercle__design__autres__projets" src="img/design/cercle__design.png">
+
+            <p class="introduction__autres__projets">
+                Vous avez aimé mon site?<br>
+                Pas d’inquiétude ! Il y en a encore.<br>
+                <br>
+                Ici vous pourrez découvrir les différents
+                sites de mes camarades. Tous plus
+                intéressants les uns que les autres.
+            </p>
+            <img class="arrow" src="img/design/arrow.jpg">
+
+            <p class="swipe__autres__projets">
+                N’hésitez pas à <b>swipe</b> vers la droite<br>
+                pour découvrir <b>d’autres projets</b>!
+            </p>
+
+            <img class="fleche__swiper" src="Icone/fleche__swiper.png">
+
+            <section class="carousel">
+                <ul class="carousel-items">
+                    
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Men Ilkay C1</h2>
+                            <img src="img/Caroussel_autres_projets/ilkay.png" />
+                            <div class="card-content">
+                                <p>Education et les filles <br>de; contraire à complémentaire</p>
+                                <a href="" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Paquier Thomas C1</h2>
+                            <img src="img/Caroussel_autres_projets/thomas.png" />
+                            <div class="card-content">
+                                <p>Le combat des femmes à travers les âges</p>
+                                <a href="http://thomaspaquier.fr/" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Pasquarelli Théo C1</h2>
+                            <img src="img/Caroussel_autres_projets/theo.png" />
+                            <div class="card-content">
+                                <p><br>Féminicité<br></p>
+                                <a href="#" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Philippe-Gallat Jonas C1</h2>
+                            <img src="img/Caroussel_autres_projets/jonas.png" />
+                            <div class="card-content">
+                                <p>France<br> féminisme</p>
+                                <a href="#" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Rodrigues Hugo C1</h2>
+                            <img src="img/Caroussel_autres_projets/hugo.png" />
+                            <div class="card-content">
+                                <p>Feminism<br> Great Battles</p>
+                                <a href="#" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Saïd Meldryck C1</h2>
+                            <img src="img/Caroussel_autres_projets/meldryck.png" />
+                            <div class="card-content">
+                                <p><br>Pop-féminism</p>
+                                <a href="#" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Saraiva Valentin C1</h2>
+                            <img src="img/Caroussel_autres_projets/valentin.png" />
+                            <div class="card-content">
+                                <p><br>Olympe</p>
+                                <a href="#" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Sarkissian David C1</h2>
+                            <img src="img/Caroussel_autres_projets/david.png" />
+                            <div class="card-content">
+                                <p><br>Be witchy</p>
+                                <a href="#" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Rodrgues Marwin C1</h2>
+                            <img src="img/Caroussel_autres_projets/marwin.png" />
+                            <div class="card-content">
+                                <p>Le féminisme, <br>une guerre sans fin</p>
+                                <a href="#" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Raboutot Evan C1</h2>
+                            <img src="img/Caroussel_autres_projets/evan.png" />
+                            <div class="card-content">
+                                <p>Les sorcières, des héroïnes figures du féminisme</p>
+                                <a href="http://evanraboutot.fr" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li> 
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Runser Aurélie C1</h2>
+                            <img src="img/Caroussel_autres_projets/aurelie.png" />
+                            <div class="card-content">
+                                <p>Femmes<br> fortes</p>
+                                <a href="https://aurelierunser.fr" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Rognon Baptiste C1</h2>
+                            <img src="img/Caroussel_autres_projets/baptiste.png" />
+                            <div class="card-content">
+                                <p><br>Ninjapon</p>
+                                <a href="http://baptisterognon.fr" class="button__caroussel">En lire plus</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
+    
+    </html>
