@@ -33,8 +33,10 @@
     <!-- Menu principal -->
     <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
     <ul class="menu__list list-unstyled">
-        <li class="menu__item"><a class="menu__link__titre" href="index.html">Fr</a></li>
-        <li class="menu__item"><a class="menu__link__titre" href="index_english.html">En</a></li>
+        <ul class="langue">
+            <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr.</a></li>
+            <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En.</a></li>
+          </ul>
         <div class="trait__menu"></div>
 
         <li><a class="menu__link__titre">Nos articles</a></li>

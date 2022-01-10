@@ -34,8 +34,10 @@
     <!-- Menu principal -->
     <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
     <ul class="menu__list list-unstyled">
-        <li class="menu__item"><a class="menu__link__titre" href="index.html">Fr</a></li>
-        <li class="menu__item"><a class="menu__link__titre" href="index_english.html">En</a></li>
+      <ul class="langue">
+        <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr.</a></li>
+        <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En.</a></li>
+      </ul>
         <div class="trait__menu"></div>
 
         <li><a class="menu__link__titre">Nos articles</a></li>
@@ -55,9 +57,6 @@
     <!-- Fin du menu principal -->
         </header>
         <main>
-          <a href="#" class="btn">
-              <img src="Bouton/retour_vers_le_haut.svg" class="icone">
-          </a>
           <h2>Me contacter</h2>
           <div class="trait__article"></div>
       
@@ -65,10 +64,10 @@
           <form class="form">
         
             <label for="fname">Prénom</label>
-            <input type="text" id="fname" name="firstname" placeholder="Arthur ...">
+            <input type="text" id="fname" name="firstname" placeholder="Votre prénom: Arthur ...">
         
             <label for="lname">Nom</label>
-            <input type="text" id="lname" name="lastname" placeholder="Meyer ...">
+            <input type="text" id="lname" name="lastname" placeholder="Votre nom: Meyer ...">
         
             <label for="subject">Impressions</label>
             <textarea id="subject" name="subject" placeholder="Ecrivez votre message ici, ou donnez moi toutes vos impressions" style="height:200px"></textarea>
@@ -76,6 +75,10 @@
             <input type="submit" value="Envoyer">
           </form>
         </div>
+
+        <a href="#" class="btn">
+          <img src="img/captcha.svg" class="captcha">
+      </a>
       </main>
     </body>
 </html>

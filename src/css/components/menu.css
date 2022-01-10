@@ -33,17 +33,12 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
 .menu__link {
   color: var(--fond-site);
   margin: 30px;
-<<<<<<< HEAD
   font-family: 'cooper_hewittbook';
-=======
-  font-family: var(--font-sans-serif);
->>>>>>> 15c57db0e1be41c22aa37909f447cd28497d2dd9
   font-weight: lighter;
 }
 
 .menu__link__titre {
   color: var(--fond-site);
-<<<<<<< HEAD
   font-family: var(--font-sans-serif);
   font-weight: bolder
 }
@@ -56,12 +51,6 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   margin-left: 43px;
   list-style-type: none
 }
-=======
-  
-  font-family: var(--font-sans-serif);
-  font-weight: bolder
-}
->>>>>>> 15c57db0e1be41c22aa37909f447cd28497d2dd9
 
 .trait__menu{
     border-top: 2px solid var(--fond-site);

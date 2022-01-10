@@ -34,8 +34,10 @@
     <!-- Menu principal -->
     <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
     <ul class="menu__list list-unstyled">
-        <li class="menu__item"><a class="menu__link__titre" href="index.html">Fr</a></li>
-        <li class="menu__item"><a class="menu__link__titre" href="index_english.html">En</a></li>
+        <ul class="langue">
+            <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr.</a></li>
+            <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En.</a></li>
+          </ul>
         <div class="trait__menu"></div>
 
         <li><a class="menu__link__titre">Nos articles</a></li>
@@ -64,13 +66,13 @@
                     <div class="trait__article"></div>
                 <section>
                         <p class="introduction__article">
-                            Elizabeth Cady Stanton, femme athée, féministe et
+                            Elizabeth Cady Stanton, femme athée, <span class=span__mots__cles>féministe</span> et
                     abolitionniste. Est la première femme à demanderle suffrage féminin aux Etats-Unis. Elle est une des
                     toutes premières femmes à employer le mot
                     féminisme, en dénonçant la “tyrannie masculin".<br>
                     <br>
                     Elizabeth deviendra le leader de la première vague
-                    féministe menant son combat en revendiquant
+                    féministe menant son <span class=span__mots__cles>combat</span> en revendiquant
                     l’égalité des sexes, le vote des femmes, ou
                     simplement, le respect.
                         </p>
@@ -80,7 +82,7 @@
                     <div class="trait_dessus"></div>
                     <p class="textes__article">Nous avons choisi pour cet article, de mettre en
                         lumière une femme importante pour l’histoire d’une
-                        féminisme, qui n’est malheureusement, pas connu de
+                        <span class=span__mots__cles>féminisme</span>, qui n’est malheureusement, pas connu de
                         tous.
                     </p>
 
@@ -89,7 +91,7 @@
                         <figcaption>Elizabeth Cady Stanton</figcaption>
                     </figure>
 
-                    <p class="textes__article">Pour savoir d’où vient son envie de combattre les droits
+                    <p class="textes__article">Pour savoir d’où vient son envie de <span class=span__mots__cles>combattre</span> les droits
                         des femmes. Il faut revenir dans sa jeunesse.
                         Pendant son enfance, elle étudie alors le droit dans les
                         grandes écoles.<br>
@@ -113,7 +115,7 @@
                         que subissent chaque jour les femme.
                         La découverte de ces lois qui crée une distinction entre
                         différents citoyens pour aucune raison va donner envie
-                        à Elizabeth de combattre pour que chaque
+                        à Elizabeth de <span class=span__mots__cles>combattre</span> pour que chaque
                         personnes possède les même droits.<br>
                         <br>
                         Elle est aussi très attachée au mouvement
@@ -132,10 +134,10 @@
 
                     <p class="textes__article">Elle est l’organisatrice de la première convention sur le
                         droit des femmes avec Lucretia C.Mott et Abby Kelley,
-                        la convention Seneca Falls en juillet 1848.<br>
+                        la convention <span class=span__mots__cles>Seneca Falls</span> en juillet 1848.<br>
                         <br>
                         C'est alors dans cette petite ville d’environ 4000
-                        habitants qui deviendront le lieu de naissance del’histoire du féminisme. 
+                        habitants qui deviendront le lieu de naissance del’histoire du <span class=span__mots__cles>féminisme.</span> 
                         Grace a une des plus grande et plus importante
                         convention.<br>
                         <br>
@@ -163,7 +165,7 @@
                         Mais à cette époque, l’idée de vouloir l’égalité entre
                         chaque être humain peut être mal vu entre hommes.
                         Alors certains se faisait sans doute passer pour des
-                        misogynes ou sexiste qu’ils n’étaient pas.
+                        misogynes ou <span class=span__mots__cles>sexiste</span> qu’ils n’étaient pas.
                     </p>
                 </section>
 
@@ -196,7 +198,7 @@
                         <figcaption>Emplacement de la Convention Seneca Falls</figcaption>
                     </figure>
 
-                    <p class="textes__article">Durant cette convention Elizabeth Cady Stanton et ses
+                    <p class="textes__article">Durant cette convention <span class=span__mots__cles>Elizabeth Cady</span> <span class=span__mots__cles>Stanton</span> et ses
                         2 autres meneuses, reproche toute les actions
                         discriminante, misogyne ou inégalitaire exercé par
                         les hommes sur les femmes.
@@ -206,7 +208,7 @@
                 <section><h1 class="sous__titre__article">Le combat efficace d'Elizabeth</h1>
                     <div class="trait_dessus"></div>
 
-                    <p class="textes__article">Elizabeth Cady Stanton mourra le 26 octobre 1902 à
+                    <p class="textes__article"><span class=span__mots__cles>Elizabeth Cady Stanton</span> mourra le 26 octobre 1902 à
                         New-York. Elizabeth laissa derrière elle son combat
                         féministe.<br>
                         <br>
@@ -216,81 +218,103 @@
                         <br>
                         Ce mouvement donna la force et l'envie à pleins de
                         nouvelles femmes. Ces nouveaux visages du féminisme
-                        qui auront comme modèle Elizabeth Cady Stanton.
+                        qui auront comme modèle <span class=span__mots__cles>Elizabeth Cady Stanton.</span>
                     </p>
                 </section>
             </article>
                 <section>
-                    <hr>
-                    <h2>Vous avez aimé?</h2>
-                    <h3>Pas de soucis. Il y en a d’autres<br>
-                        N’hésitez pas à lire nos deux<br>
-                        autres articles ci-dessous!
-                    </h3>
+                    <div class="trait__aimez__vous"></div>
+                        <h2 class="aimez__vous">Vous avez aimé?</h2>
+                        <h3 class="autre__articles">Pas de soucis.<br>
+                            N’hésitez pas à lire <br>
+                            d'autres articles ci-dessous!
+                        </h3>
             
-                    <article>
-                        <a href="Miley Cyrus , la nouvelle féministe.html">
-                        <h3>Miley Cyrus: la néo-féministe</h3>
-                            <img src="img/page accueuil/Miley Cyrus.svg"
-                            alt="Les tirs, tableau de Niki de Saint Phalle">
-                            <h4>Entre propos choquant et osé, découvrez comment<br>
-                                Miley Cyrus est devenue une icône du féminisme<br>
-                            </h4></a>
+                    <article> 
+                        <a  href="Miley_Cyrus_,_la_nouvelle_féministe.html">
+                            <h2 class="titre__vignette" >Miley Cyrus la néo-féministe<br> de l'art musical.</h2>
+                            <img  src="img/page_accueuil/Miley_Cyrus.webp" alt="Miley Cyrus" class="img2">
+                        </a>
+    
+                        <a  href="Miley_Cyrus_,_la_nouvelle_féministe.html">
+                            <h3 class="sous__titre__vignette">Entre propos choquant et osé, découvrez comment Miley Cyrus 
+                                est devenue une icône du féminisme
+                            </h3>
+                        </a>
+                    </article>
                 </section>
         </main>
+        <footer class="footer">
 
-        <footer>
-            <h2>À propos de moi</h2>
-            <h5>Bonjour ! 
+            <h2 class=footer__link2>À propos de moi</h2>
 
-            Je me présente Saturni Loris en 1ère année de MMI (Métiers du Multimédia et d’Internet) à Montbéliard<br>
-            
-            Passioné de graphisme et d’audiovisuel.
-            Avoir l’occasion de créer un site web est une opportunité d’acquérir de nouvelles expériences!<br> 
-            
-            Portant une attention particulière sur les arts et le mouvement féministe. Créer un site internet qui reliait ces deux sujets, peut-être très judiceux.<br>
-            
-            Je vous laisse donc visiter mon site ! 
+            <h5 class=footer__link__text>
+                <h3 class="footer__title">Bonjour !</h3>
+
+                <p class=footer__link__text>Je me présente Saturni Loris en 1ère année de MMI 
+                (Métiers du Multimédia et d’Internet) à Montbéliard.
+                </p>
+             
+                <p class=footer__link__text>Passionné de graphisme et d’audiovisuel.
+                Avoir l’occasion de créer un site web est une 
+                opportunité d’acquérir de nouvelles expériences !
+                </p> 
+             
+                <p class=footer__link__text>Portant une attention particulière sur les arts,
+                     le mouvement féministe ou encore la créativité. Créer un site internet qui 
+                reliait ces deux sujets, peut-être très judiceux.
+                </p>
+             
+                <p class=footer__link__text>Je vous laisse donc visiter mon site ! </p>
             </h5>
 
-            <a href="index.html">
-            <img src="Bouton/logo blanc.svg" alt="Logo Femme et mieux"></a>
+         <a class=footer__link href="index.html">
+            <img class="footer__logo" src="Bouton/logo_blanc.svg" alt="Logo Femme et mieux">
+         </a>
 
+            <section class="footer__fond">
 
+                <a href="Contact.html"><h3 class="footer__title">Donnez vos impressions</h3>
+                    <p class=footer__link__text>Formulaire de contact</p>
+                </a>
+    
+                <h3 class="footer__title">Mentions légales</h3>
+                <address class=footer__link__text>
+                    <p class=footer__link__text> Projet réalisé dans le cadre d'un exercice pédagogique au département
+                        <a href="http://mmimontbeliard.com/">MMI de Montbéliard
+                    </p>
+                </address>
 
-            <h3><a href="Contact.html"> Donnez vos impressions</h3>
-            <h5>Formulaire de contact</h5></a>
+                <h3 class="footer__title">Me contacter</h3>
+                <address>
+                    <p class=footer__link__text>Loris SATURNI C1
+                        <a href="mailto:saturniloris@gmail.com">saturniloris@gmail.com</a>
+                    </p>
+                </address>
+                
+                <li class=reseaux__sociaux>
 
-            <h3>Mentions légales</h3>
-            <adress>
-            Projet réalisé dans le cadre d'un exercice pédagogique au 
-            <a href="http://mmimontbeliard.com/"> département MMI de Montbéliard
-                <img src="Icone/logo mmi.svg" alt="IconMMI">  
-                <br></a>
+                    <div class="reseau__fb"><a href="https://www.facebook.com/Loris.Saturni">
+                    <img src="Icone/facebook_blanc.svg" alt="IconFacebook"></a></div>
 
-            </adress>
+                    <div class="reseau__insta"><a href="https://www.instagram.com/loris_saturni_/">
+                    <img src="Icone/instagram_blanc.svg" alt="IconInstragram"></a></div>
+                                
+                    <div class="reseau__pin"><a href="https://pin.it/3Ky0pzi">
+                    <img src="Icone/pinterest_blanc.svg" alt="IconPinterest"></a></div>
 
-            <h3>Me contacter</h3>
-            <h5>Loris SATURNI C1</h5>
-            <a href="mailto:saturniloris@gmail.com">saturniloris@gmail.com</a>
-            <h5>Langues</h5>
+                    <div class="reseau__lin"><a href="https://www.linkedin.com/in/loris-saturni-b96156225/">
+                    <img src="Icone/linkedin_blanc.svg" alt="IconLinkedin"></a></div>
+                </li>
 
-            <h3>Me suivre</h3>
-            <li><a href="https://www.facebook.com/Loris.Saturni">
-            <img src="Icone/facebook 1.svg" alt="IconFacebook"></a>
-
-            <li><a href="https://www.instagram.com/loris_saturni_/">
-            <img src="Icone/instagram 1.svg" alt="IconInstragram"></a>
-        
-            <li><a href="https://pin.it/3Ky0pzi">
-            <img src="Icone/pinterest noir 1.svg" alt="IconPinterest"></a>
-
-            <li><a href="https://www.linkedin.com/in/loris-saturni-b96156225/">
-            <img src="Icone/logo-linkedin noir 1.svg" alt="IconLinkedin"></a> 
-
-            <h6>@loris_saturni_</h6>
-            <h6>2021</h6>
-        </footer>
+                <h5 class="footer__link4">@loris_saturni_ 2021</h5>
+                <div class="trait__menu"></div>
+                <ul class="langue">
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr</a></li>
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En</a></li>
+                </ul>
+            </section>
+        </footer> 
     </body>
 
 
