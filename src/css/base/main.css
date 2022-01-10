@@ -182,7 +182,7 @@ margin-top: 1px;
   .cercle__design{
     position: absolute;
     margin-top: -20px;
-    margin-left: 292px;
+    margin-left: 292px;z-index: -1;
   }
 
   .cercle__design__autres__projets{
@@ -257,7 +257,6 @@ margin-top: 1px;
     }
 
     .sous__titre__article{
-<<<<<<< HEAD
       font-family: 'cooper_hewittbook';
       font-size: 20px;
       text-align: center;
@@ -272,8 +271,3 @@ margin-top: 1px;
     .titre__page{
       font-family: var(--font-sans-serif);
     }
-=======
-      text-align: center;
-      margin-top: 45px;
-    }
->>>>>>> 15c57db0e1be41c22aa37909f447cd28497d2dd9
