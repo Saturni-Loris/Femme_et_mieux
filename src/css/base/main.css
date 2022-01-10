@@ -216,13 +216,13 @@ margin-top: 1px;
     color: var(--rouge-principal);
     background-color: transparent;
     font-weight: bolder;
-    padding: 10px 15px;
+    padding: 10px 5px;
     margin-top: 13px;
     margin-bottom: 40px;
     text-align: center;
     border: solid;
     border-color: var(--rouge-principal);
-    margin-left: 80px;
+    margin-left: 140px;
     border-width: 2px;
     cursor: pointer;
   }
