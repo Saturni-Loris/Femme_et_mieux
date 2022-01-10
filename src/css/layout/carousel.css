@@ -92,7 +92,7 @@ p{
     overflow-x: scroll;
     margin-left: calc(0px - var(--space3x));
     margin-right: calc(0px - var(--space3x));
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory
 }
 
 .caroussel_item{
