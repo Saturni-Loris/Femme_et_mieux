@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Femme et mieux">
+        <title>Femme et mieux</title>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <body>
+        <header class="header" x-data="{ menuIsOpen : false }">
+
+            <div class="header__start">
+              <a href="/">
+                <img class="header__logo__1" src="Bouton/logo_blanc.svg" alt="logo Femme et mieux">
+              </a>
+            </div>
+
+            <h2 class="introduction__header"> Welcome to learn more about each of them         
+            </h2>
+            <!-- Fin du formulaire de recherche -->
+                    
+                    <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <ul class="langue">
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr.</a></li>
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En.</a></li>
+                </ul>
+
+                <div class="trait__menu"></div>
+
+                <li><a class="menu__link__titre">Our articles</a></li>
+                <li class="menu__item"><a class="menu__link" href="Miley_Cyrus_,_la_nouvelle_féministe.html">Miley Cyrus:<br> The neo-feminist</a></li>
+                <li class="menu__item"><a class="menu__link" href="Le_combat_féministe_de_l_'_ombre.html">Elizabeth Cady Stanton:<br> The battle of the shadows</a></li>
+                <li class="menu__item"><a class="menu__link" href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">How has feminism found<br> its place in art?</a></li>
+                <div class="trait__menu"></div>
+
+
+                <li class="menu__item"><a class="menu__link__titre" href="D_'_autres_projets.html">Other projects</a></li>
+                <div class="trait__menu"></div>
+                <li class="menu__item"><a class="menu__link__titre" href="En_savoir_plus.html">Read more</a></li>
+                <div class="trait__menu"></div>
+                <li class="menu__item"><a class="menu__link__titre" href="Contact.html">Contact</a></li>
+            </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </header>
+        <main>
+
+            <a href="#" class="btn">
+                <img src="Bouton/retour_vers_le_haut.svg" class="icone">
+            </a>
+
+            <div class="trait__header"></div>
+            <div class="trait__header"></div>
+            <div class="trait__header__2"></div>
+            <img class="cercle__design" src="img/design/cercle__design.png">
+
+        
+            <p class="introduction__page__acceuil">Do you like art? Feminism?<br>
+                Culture or discovery?<br>
+            <br>
+            Then this site is for you!</p>
+
+                <img class="arrow" src="img/design/arrow.jpg">
+                
+                <article> 
+                    <a  href="Miley_Cyrus_,_la_nouvelle_féministe.html">
+                        <h2 class="titre__vignette" >Miley Cyrus the neo-feminist<br> of musical art</h2>
+                        <img  src="img/page_accueuil/Miley_Cyrus.webp" alt="Miley Cyrus" class="img2">
+                    </a>
+
+                    <a  href="Miley_Cyrus_,_la_nouvelle_féministe.html">
+                        <h3 class="sous__titre__vignette">From shocking to daring, find out how Miley Cyrus 
+                            became a feminist icon
+                        </h3>
+                    </a>
+                </article>
+                
+                <a href="Miley_Cyrus_,_la_nouvelle_féministe.html">
+                    <input class="en__lire__plus" value="Read more">
+                </a>
+
+                <br>
+                <br>
+                <p class="introduction__page__acceuil">See also<br> other articles here!</p>
+                <br>
+                <article>
+                    <a href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">
+                    <h2 class="titre__vignette">How has feminism found its place in art?</h2>
+                    <img src="img/page_accueuil/Les_tirs.webp" alt="Tableau Les tirs par Niki de Saint Phalle"></a>
+
+                    <a href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">
+                        <h3 class="sous__titre__vignette"> Find out how women have managed to find their 
+                            their place in art. After their many struggles
+                        </h3>
+                    </a>
+                </article>
+
+                <a href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">
+                    <input class="en__lire__plus" value="Read more">
+                </a>
+       
+                <article>
+                    <h3 class="sous__titre__video__youtube" >Rifle shooting by Niki de St Phalle.
+                        A new way of painting!
+                   </h3>
+
+                    <video class="video__youtube" width="375" height="240" controls>
+                        <source src="video/Les_tirs_de_Niki_de_St_Phalle.mp4" type=video/mp4>
+                    </video> 
+                </article>
+                
+
+                <article>
+                    <a href="Le_combat_féministe_de_l_'_ombre.html">
+                        <h2 class="titre__vignette">Elizabeth Cady Stanton:<br> The Shadow Fight</h2>
+                        <img src="img/page_accueuil/Elizabeth_Cady_Stanton.webp" alt="Elizabeth Cady Stanton">
+                    </a>
+
+                    <a href="Le_combat_féministe_de_l_'_ombre.html">
+                        <h3 class="sous__titre__vignette"> Little known to all, he is responsible for a part of the feminist movement. 
+                            feminist movement. Discover Elizabeth Cady Stanton
+                        </h3>
+                    </a>
+                </article>
+
+                <a href="Le_combat_féministe_de_l_'_ombre.html">
+                    <input class="en__lire__plus" value="Read more">
+                </a>
+
+            </section>
+        </main>
+        
+
+        <footer class="footer">
+
+            <h2 class=footer__link2>About me</h2>
+
+            <h5 class=footer__link__text>
+                <h3 class="footer__title">Hello !</h3>
+
+                <p class=footer__link__text>I'm Saturni Loris in my 1st year of MMI 
+                    (Multimedia and Internet professions) in Montbéliard.
+                </p>
+             
+                <p class=footer__link__text>Passionate about graphic design and audiovisuals.
+                    Having the opportunity to create a website is an 
+                    opportunity to gain new experiences!
+                </p> 
+             
+                <p class=footer__link__text>With a particular focus on the arts,
+                    the women's movement and creativity. Creating a website that 
+               linked these two subjects, perhaps very judiciously.
+                </p>
+             
+                <p class=footer__link__text>So I'll let you visit my site! </p>
+            </h5>
+
+         <a class=footer__link href="index.html">
+            <img class="footer__logo" src="Bouton/logo_blanc.svg" alt="Logo Femme et mieux">
+         </a>
+
+            <section class="footer__fond">
+
+                <a href="Contact.html"><h3 class="footer__title">Give your feedback</h3>
+                    <p class=footer__link__text>Contact form</p>
+                </a>
+    
+                <h3 class="footer__title">Legal information</h3>
+                <address class=footer__link__text>
+                    <p class=footer__link__text> Project carried out as part of an educational exercise in the department
+                        <a href="http://mmimontbeliard.com/">MMI of Montbéliard
+                    </p>
+                </address>
+
+                <h3 class="footer__title">Contact me</h3>
+                <address>
+                    <p class=footer__link__text>Loris SATURNI C1
+                        <a href="mailto:saturniloris@gmail.com">saturniloris@gmail.com</a>
+                    </p>
+                </address>
+                
+                <li class=reseaux__sociaux>
+
+                    <div class="reseau__fb"><a href="https://www.facebook.com/Loris.Saturni">
+                    <img src="Icone/facebook_blanc.svg" alt="IconFacebook"></a></div>
+
+                    <div class="reseau__insta"><a href="https://www.instagram.com/loris_saturni_/">
+                    <img src="Icone/instagram_blanc.svg" alt="IconInstragram"></a></div>
+                                
+                    <div class="reseau__pin"><a href="https://pin.it/3Ky0pzi">
+                    <img src="Icone/pinterest_blanc.svg" alt="IconPinterest"></a></div>
+
+                    <div class="reseau__lin"><a href="https://www.linkedin.com/in/loris-saturni-b96156225/">
+                    <img src="Icone/linkedin_blanc.svg" alt="IconLinkedin"></a></div>
+                </li>
+
+                <h5 class="footer__link4">@loris_saturni_ 2021</h5>
+                <div class="trait__menu"></div>
+                <ul class="langue">
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index.html">Fr</a></li>
+                    <li class="menu__item"><a class="menu__link__titre__langue" href="index_english.html">En</a></li>
+                </ul>
+            </section>
+        </footer> 
+
+
+    </body>
+</html>
