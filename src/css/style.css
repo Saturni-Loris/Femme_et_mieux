@@ -17,6 +17,7 @@
 @import url("layout/footer.css");
 @import url("layout/form.css");
 @import url("layout/carousel.css");
+@import url("/src/css/layout/frise.css");
 
 /* Components */
 @import url("components/menu.css");
