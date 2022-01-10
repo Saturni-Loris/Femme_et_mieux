@@ -45,7 +45,7 @@
   }
 
   .footer__link__text {
-    font-family: url(/fonts/CooperHewitt-Light.otf);
+    font-family: 'cooper_hewittbook';
     font-size:large;
     text-align: left;
     font-weight:normal;
