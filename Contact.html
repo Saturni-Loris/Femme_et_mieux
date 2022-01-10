@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Femme et mieux">
+        <title>Comment le féminisme a t il trouvé sa place dans l'art</title>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <body>
+        <header class="header" x-data="{ menuIsOpen : false }">
+
+            <div class="header__start">
+              <a href="/">
+                <img class="header__logo" src="Bouton/logo_blanc.svg" alt="logo Femme et mieux">
+              </a>
+            </div>
+
+            <!-- Fin du formulaire de recherche -->
+                    
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    </button>
+
+    <!-- Menu principal -->
+    <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+        <li class="menu__item"><a class="menu__link__titre" href="index.html">Fr</a></li>
+        <li class="menu__item"><a class="menu__link__titre" href="index_english.html">En</a></li>
+        <div class="trait__menu"></div>
+
+        <li><a class="menu__link__titre">Nos articles</a></li>
+        <li class="menu__item"><a class="menu__link" href="Miley_Cyrus_,_la_nouvelle_féministe.html">Miley Cyrus: La  néo-féministe </a></li>
+        <li class="menu__item"><a class="menu__link" href="Le_combat_féministe_de_l_'_ombre.html">Elizabeth Cady Stanton:<br> Le combat de l’ombre</a></li>
+        <li class="menu__item"><a class="menu__link" href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">Comment le féminisme a-t-il trouvé<br> sa place dans l’art ?</a></li>
+        <div class="trait__menu"></div>
+
+
+        <li class="menu__item"><a class="menu__link__titre" href="D_'_autres_projets.html">D'autres projets</a></li>
+        <div class="trait__menu"></div>
+        <li class="menu__item"><a class="menu__link__titre" href="En_savoir_plus.html">En savoir +</a></li>
+        <div class="trait__menu"></div>
+        <li class="menu__item"><a class="menu__link__titre" href="Contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    <!-- Fin du menu principal -->
+        </header>
+        <main>
+          <a href="#" class="btn">
+              <img src="Bouton/retour_vers_le_haut.svg" class="icone">
+          </a>
+          <h2>Me contacter</h2>
+          <div class="trait__article"></div>
+      
+        <div class="form">
+          <form class="form">
+        
+            <label for="fname">Prénom</label>
+            <input type="text" id="fname" name="firstname" placeholder="Arthur ...">
+        
+            <label for="lname">Nom</label>
+            <input type="text" id="lname" name="lastname" placeholder="Meyer ...">
+        
+            <label for="subject">Impressions</label>
+            <textarea id="subject" name="subject" placeholder="Ecrivez votre message ici, ou donnez moi toutes vos impressions" style="height:200px"></textarea>
+        
+            <input type="submit" value="Envoyer">
+          </form>
+        </div>
+      </main>
+    </body>
+</html>
