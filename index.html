@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Femme et mieux">
+        <title>Femme et mieux</title>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <body>
+        <header class="header" x-data="{ menuIsOpen : false }">
+
+            <div class="header__start">
+              <a href="/">
+                <img class="header__logo__1" src="Bouton/logo_blanc.svg" alt="logo Femme et mieux">
+              </a>
+            </div>
+
+            <h2 class="introduction__header"> Pour mieux en connaître sur toutes et tous!              
+            </h2>
+            <!-- Fin du formulaire de recherche -->
+                    
+                    <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+            </button>
+
+            <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item"><a class="menu__link__titre" href="index.html">Fr</a></li>
+                <li class="menu__item"><a class="menu__link__titre" href="index_english.html">En</a></li>
+                <div class="trait__menu"></div>
+
+                <li><a class="menu__link__titre">Nos articles</a></li>
+                <li class="menu__item"><a class="menu__link" href="Miley_Cyrus_,_la_nouvelle_féministe.html">Miley Cyrus: La  néo-féministe </a></li>
+                <li class="menu__item"><a class="menu__link" href="Le_combat_féministe_de_l_'_ombre.html">Elizabeth Cady Stanton:<br> Le combat de l’ombre</a></li>
+                <li class="menu__item"><a class="menu__link" href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">Comment le féminisme a-t-il trouvé<br> sa place dans l’art ?</a></li>
+                <div class="trait__menu"></div>
+
+
+                <li class="menu__item"><a class="menu__link__titre" href="D_'_autres_projets.html">D'autres projets</a></li>
+                <div class="trait__menu"></div>
+                <li class="menu__item"><a class="menu__link__titre" href="En_savoir_plus.html">En savoir +</a></li>
+                <div class="trait__menu"></div>
+                <li class="menu__item"><a class="menu__link__titre" href="Contact.html">Contact</a></li>
+            </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </header>
+        <main>
+
+            <a href="#" class="btn">
+                <img src="Bouton/retour_vers_le_haut.svg" class="icone">
+            </a>
+
+            <div class="trait__header"></div>
+            <div class="trait__header"></div>
+            <div class="trait__header__2"></div>
+            <img class="cercle__design" src="img/design/cercle__design.png">
+
+        
+            <p class="introduction__page__acceuil">Vous aimez l'art? Le féminisme?<br>
+            La culture ou encore la découverte?<br>
+            <br>
+            Alors ce site est fait pour vous!</p>
+
+                <img class="arrow" src="img/design/arrow.jpg">
+                
+                <article>
+                    <a  href="Miley_Cyrus_,_la_nouvelle_féministe.html">
+                        <h2 class="titre__vignette" >Miley Cyrus la néo-féministe<br> de l'art musical</h2>
+                        <img  src="img/page_accueuil/Miley_Cyrus.webp" alt="Miley Cyrus" class="img2">
+                    </a>
+
+                    <a  href="Miley_Cyrus_,_la_nouvelle_féministe.html">
+                        <h3 class="sous__titre__vignette">Entre propos choquant et osé, découvrez comment Miley Cyrus 
+                            est devenue une icône du féminisme
+                        </h3>
+                    </a>
+                </article>
+                
+                <a href="Miley_Cyrus_,_la_nouvelle_féministe.html">
+                    <input class="en__lire__plus" value="En lire +">
+                </a>
+
+                <br>
+                <br>
+                <p class="introduction__page__acceuil">Découvrez également<br> d'autres articles ici!</p>
+                <br>
+                <article>
+                    <a href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">
+                    <h2 class="titre__vignette">Comment le féminisme a-t-il trouvé<br> sa place dans l’art ?</h2>
+                    <img src="img/page_accueuil/Les_tirs.webp" alt="Tableau Les tirs par Niki de Saint Phalle"></a>
+
+                    <a href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">
+                        <h3 class="sous__titre__vignette"> Découvrez comment les femmes ont réussi à 
+                            trouver leur place dans l'art. Après leurs nombreux combats
+                        </h3>
+                    </a>
+                </article>
+
+                <a href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">
+                    <input class="en__lire__plus" value="En lire +">
+                </a>
+       
+                <article>
+                    <h3 class="sous__titre__video__youtube" >Scéance de tir à la carabine par Niki de St Phalle.
+                        Nouveau moyen de peindre!
+                   </h3>
+
+                    <video class="video__youtube" width="375" height="240" controls>
+                        <source src="video/Les_tirs_de_Niki_de_St_Phalle.mp4" type=video/mp4>
+                    </video> 
+                </article>
+                
+
+                <article>
+                    <a href="Le_combat_féministe_de_l_'_ombre.html">
+                        <h2 class="titre__vignette">Elizabeth Cady Stanton:<br> Le combat de l’ombre</h2>
+                        <img src="img/page_accueuil/Elizabeth_Cady_Stanton.webp" alt="Elizabeth Cady Stanton">
+                    </a>
+
+                    <a href="Le_combat_féministe_de_l_'_ombre.html">
+                        <h3 class="sous__titre__vignette"> Peu connu de tous, on lui doit  une partie du mouvement 
+                            féministe. Découvrez Elizabeth Cady Stanton
+                        </h3>
+                    </a>
+                </article>
+
+                <a href="Le_combat_féministe_de_l_'_ombre.html">
+                    <input class="en__lire__plus" value="En lire +">
+                </a>
+
+            </section>
+        </main>
+        
+
+        <footer class="footer">
+
+            <h2 class=footer__link2>À propos de moi</h2>
+
+            <h5 class=footer__link__text>
+                <h3 class="footer__title">Bonjour !</h3>
+
+                <p class=footer__link__text>Je me présente Saturni Loris en 1ère année de MMI 
+                (Métiers du Multimédia et d’Internet) à Montbéliard
+                </p>
+             
+                <p class=footer__link__text>Passioné de graphisme et d’audiovisuel.
+                Avoir l’occasion de créer un site web est une 
+                opportunité d’acquérir de nouvelles expériences!
+                </p> 
+             
+                <p class=footer__link__text>Portant une attention particulière sur les arts 
+                et le mouvement féministe. Créer un site internet qui 
+                reliait ces deux sujets, peut-être très judiceux.
+                </p>
+             
+                <p class=footer__link__text>Je vous laisse donc visiter mon site ! </p>
+            </h5>
+
+         <a class=footer__link href="index.html">
+            <img class="footer__logo" src="Bouton/logo_blanc.svg" alt="Logo Femme et mieux">
+         </a>
+
+            <section class="footer__fond">
+
+                <a href="Contact.html"><h3 class="footer__title">Donnez vos impressions</h3>
+                    <p class=footer__link__text>Formulaire de contact</p>
+                </a>
+    
+                <h3 class="footer__title">Mentions légales</h3>
+                <address class=footer__link__text>
+                    <p class=footer__link__text> Projet réalisé dans le cadre d'un exercice pédagogique au département
+                        <a href="http://mmimontbeliard.com/"> <br>MMI de Montbéliard
+                    </p>
+                </address>
+
+                <h3 class="footer__title">Me contacter</h3>
+                <address>
+                    <p class=footer__link__text>Loris SATURNI C1
+                        <a href="mailto:saturniloris@gmail.com">saturniloris@gmail.com</a>
+                    </p>
+                </address>
+
+                <h5 class="footer__link4">@loris_saturni_ 2021</h5>
+            </section>
+        </footer> 
+
+
+    </body>
+</html>
