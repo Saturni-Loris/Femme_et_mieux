@@ -1,0 +1,124 @@
+  .footer {
+    background-color: var(--rouge-principal);
+    color: var(--fond-site);
+    padding: 0px var(--space3x);
+    
+  }
+
+  .footer a {
+    color: var(--fond-site);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 1;
+  }
+
+  .footer__list {
+    display: flex;
+    gap: var(--space3x);
+  }
+
+  .footer__a_propos {
+    background-color: var(--rouge-secondaire);
+
+  }
+
+  .footer__link {
+    background-color: var(--bleu-noir);
+    display: block;
+    margin: 0 -24px;
+    padding: var(--space3x);
+  }
+
+  .footer__link2 {
+    background-color: var(--rouge-secondaire);
+<<<<<<< HEAD
+    color: var(--font-site);
+=======
+>>>>>>> 15c57db0e1be41c22aa37909f447cd28497d2dd9
+    font-family: url(fonts\CooperHewitt-Light.otf);
+    display: block;
+    margin: 24px -24px; 
+    padding: var(--space4x);
+  }
+
+  h2 {
+     text-align: center;
+     font-size:x-large;
+     font-weight:600;
+  }
+
+  .footer__link__text {
+    font-family: url(/fonts/CooperHewitt-Light.otf);
+    font-size:large;
+    text-align: left;
+    font-weight:normal;
+    margin-top: 10px;
+    color: var(--fond-site);
+    margin-left: 0px;
+  }
+
+  .footer__title {
+    font-family: var(--font-sans-serif);
+<<<<<<< HEAD
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+=======
+    margin-top: 0px;
+>>>>>>> 15c57db0e1be41c22aa37909f447cd28497d2dd9
+  }
+
+  .reseau{
+    width: auto;
+    height: auto;
+    
+  }
+
+  .reseaux__sociaux{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  .reseau__fb{
+    
+    margin: 10px;
+  }
+  .reseau__insta{
+    margin:10px;
+  }
+  .reseau__lin{
+    margin:10px
+  }
+  .reseau__pin{
+    margin:10px
+  }
+
+
+  h5{
+    margin-bottom: var(--space3x);
+    margin-top: var(--space3x);
+  }
+
+  .footer__link4{
+  text-align: center;
+  }
+
+  .footer__menu{
+    display: flex;
+  }
+
+  .footer__logo{
+    margin-left: 0px;
+  }
+
+  .footer__fond{
+    background: url(../../../img/footer/Component\ 35.png) no-repeat;
+    justify-content: space-between;
+    background-size: cover;
+    display: block;
+    margin: -1px -25px;
+    padding: var(--space4x);
+  }
+
+  
+

@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:var(--fond-site);
+    color:var(--fond-site);
+  }
+  
+  header a {
+    text-decoration: none;
+  }
+
+  .header__logo__1{
+    margin-left: 95px;
+    margin-top: 30px;
+  }
+  
+  .header {
+    padding: 0 20px;
+    height: 243px;
+    display: flex;
+    background: url(../../../img/page_accueuil/header.png) no-repeat;
+    justify-content: space-between;
+    background-size: cover;
+  }
+
+  .traits {
+    height: 60px;
+    width: 90px;
+    
+    display: flex;
+    align-items: center;
+  }
+  
+  .introduction__header{
+    color: var(--fond-site);
+    margin-top: 140px;
+    position: absolute;
+    font-weight:normal;
+    font-family: 'PT Sans', sans-serif;
+    font-size: var(--introduction--header);
+    margin-left: 25px;
+  }
