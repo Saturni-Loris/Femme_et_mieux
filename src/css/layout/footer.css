@@ -31,10 +31,7 @@
 
   .footer__link2 {
     background-color: var(--rouge-secondaire);
-<<<<<<< HEAD
     color: var(--font-site);
-=======
->>>>>>> 15c57db0e1be41c22aa37909f447cd28497d2dd9
     font-family: url(fonts\CooperHewitt-Light.otf);
     display: block;
     margin: 24px -24px; 
@@ -59,13 +56,9 @@
 
   .footer__title {
     font-family: var(--font-sans-serif);
-<<<<<<< HEAD
     font-size: 20px;
     margin-top: 0px;
     margin-left: 0px;
-=======
-    margin-top: 0px;
->>>>>>> 15c57db0e1be41c22aa37909f447cd28497d2dd9
   }
 
   .reseau{
