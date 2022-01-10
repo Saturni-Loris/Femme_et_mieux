@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Femme et mieux">
+        <title>Femme et mieux</title>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <body>
+        <header class="header" x-data="{ menuIsOpen : false }">
+
+            <div class="header__start">
+              <a href="/">
+                <img class="header__logo" src="Bouton/logo_blanc.svg" alt="logo Femme et mieux">
+              </a>
+            </div>
+
+            <!-- Fin du formulaire de recherche -->
+                    
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    </button>
+
+    <!-- Menu principal -->
+    <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+        <li class="menu__item"><a class="menu__link__titre" href="index.html">Fr</a></li>
+        <li class="menu__item"><a class="menu__link__titre" href="index_english.html">En</a></li>
+        <div class="trait__menu"></div>
+
+        <li><a class="menu__link__titre">Nos articles</a></li>
+        <li class="menu__item"><a class="menu__link" href="Miley_Cyrus_,_la_nouvelle_féministe.html">Miley Cyrus: La  néo-féministe </a></li>
+        <li class="menu__item"><a class="menu__link" href="Le_combat_féministe_de_l_'_ombre.html">Elizabeth Cady Stanton:<br> Le combat de l’ombre</a></li>
+        <li class="menu__item"><a class="menu__link" href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">Comment le féminisme a-t-il trouvé<br> sa place dans l’art ?</a></li>
+        <div class="trait__menu"></div>
+
+
+        <li class="menu__item"><a class="menu__link__titre" href="D_'_autres_projets.html">D'autres projets</a></li>
+        <div class="trait__menu"></div>
+        <li class="menu__item"><a class="menu__link__titre" href="En_savoir_plus.html">En savoir +</a></li>
+        <div class="trait__menu"></div>
+        <li class="menu__item"><a class="menu__link__titre" href="Contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    <!-- Fin du menu principal -->
+        </header>
+        <main> 
+            <article>
+                <a href="#" class="btn">
+                    <img src="Bouton/retour_vers_le_haut.svg" class="icone">
+                </a>
+                <article>
+                    <h2>Le combat féministe de l'ombre</h2>
+                    <div class="trait__article"></div>
+                <section>
+                        <p class="introduction__article">
+                            Elizabeth Cady Stanton, femme athée, féministe et
+                    abolitionniste. Est la première femme à demanderle suffrage féminin aux Etats-Unis. Elle est une des
+                    toutes premières femmes à employer le mot
+                    féminisme, en dénonçant la “tyrannie masculin".<br>
+                    <br>
+                    Elizabeth deviendra le leader de la première vague
+                    féministe menant son combat en revendiquant
+                    l’égalité des sexes, le vote des femmes, ou
+                    simplement, le respect.
+                        </p>
+                </section>
+                
+                <section><h1 class="sous__titre__article">L'envie d'égalité dès sa jeunesse</h1>
+                    <div class="trait_dessus"></div>
+                    <p class="textes__article">Nous avons choisi pour cet article, de mettre en
+                        lumière une femme importante pour l’histoire d’une
+                        féminisme, qui n’est malheureusement, pas connu de
+                        tous.
+                    </p>
+
+                    <figure>
+                        <img src="img/Elizabeth_Cady_Stanton/Elizabeth_1.svg" alt="Elizabeth Cady Stanton">
+                        <figcaption>Elizabeth Cady Stanton</figcaption>
+                    </figure>
+
+                    <p class="textes__article">Pour savoir d’où vient son envie de combattre les droits
+                        des femmes. Il faut revenir dans sa jeunesse.
+                        Pendant son enfance, elle étudie alors le droit dans les
+                        grandes écoles.<br>
+                        <br>
+                        Comme la Johnstown académie ou
+                        encore dans la première école d’enseignement
+                        supérieur pour femme. Le séminaire de Troy, créé par
+                        Emma Willard en 1814.<br>
+                        <br>
+                        Elizabeth sortira diplômé de l’école et ira travailler avec
+                        son père Daniel Cady. Qui lui est membre du congrès et
+                        sera plus tard juge de la Cour suprême
+                    </p>
+
+                    <figure>
+                        <img src="img/Elizabeth_Cady_Stanton/Cour_suprem.svg" alt="Cour suprême des États-Unis">
+                        <figcaption>Cour suprême des États-Unis</figcaption>
+                    </figure>
+
+                    <p class="textes__article">C’est là-bas qu’elle découvrira les lois discriminatoires
+                        que subissent chaque jour les femme.
+                        La découverte de ces lois qui crée une distinction entre
+                        différents citoyens pour aucune raison va donner envie
+                        à Elizabeth de combattre pour que chaque
+                        personnes possède les même droits.<br>
+                        <br>
+                        Elle est aussi très attachée au mouvement
+                        d’abolitionniste, qui veut interdire et mettre fin à
+                        l’esclavage sur les personnes de couleurs.
+                    </p>
+
+                    <figure>
+                        <img src="img/Elizabeth_Cady_Stanton/Elizabeth_2.svg" alt="Elizabeth Cady Stanton">
+                        <figcaption>Elizabeth Cady Stanton</figcaption>
+                    </figure>
+                </section>
+
+                <section><h1 class="sous__titre__article">La convention Seneca Falls:<br> premier grand combat</h1>
+                    <div class="trait_dessus"></div>
+
+                    <p class="textes__article">Elle est l’organisatrice de la première convention sur le
+                        droit des femmes avec Lucretia C.Mott et Abby Kelley,
+                        la convention Seneca Falls en juillet 1848.<br>
+                        <br>
+                        C'est alors dans cette petite ville d’environ 4000
+                        habitants qui deviendront le lieu de naissance del’histoire du féminisme. 
+                        Grace a une des plus grande et plus importante
+                        convention.<br>
+                        <br>
+                        En cette année 1848, les rôles principale des femmes
+                        est très limité dans la société. Garder les enfants, faire
+                        le ménage et à manger. Et très souvent dirigé par leurs
+                        mari.
+                        Cette convention aura donc mené aux suffrage des
+                        femmes.
+                        
+                    </p>
+
+                    <figure>
+                            <img src="img/Elizabeth_Cady_Stanton/Convention_papier.svg" alt="Convention des droits des femmes, Seneca Falls ">
+                            <figcaption>Convention des droits des femmes, Seneca Falls </figcaption>
+                    </figure>
+
+                    <p class="textes__article">Elle arrivera alors à convaincre 68 femmes et
+                        32 hommes le 19 et 20 juillet 1848 jusqu’à la signature
+                        de la « Déclaration de sentiments », qui ai aujourd’hui vu
+                        comme l’acte qui créera le mouvement féminin
+                        américain.<br>
+                        <br>
+                        Les 32 hommes signant pourraient paraitre étonnant.
+                        Mais à cette époque, l’idée de vouloir l’égalité entre
+                        chaque être humain peut être mal vu entre hommes.
+                        Alors certains se faisait sans doute passer pour des
+                        misogynes ou sexiste qu’ils n’étaient pas.
+                    </p>
+                </section>
+
+                <section><h1 class="sous__titre__article">The Myth of Seneca Falls</h1>
+                    <div class="trait_dessus"></div>
+
+                    <p class="textes__article">Le livre <a href=https://www.amazon.fr/Myth-Seneca-Falls-Suffrage-1848-1898/dp/1469633507>
+                        Seneca Falls and the Origins of the Women's
+                        Rights Movement </a> par Sally McMillen qui raconte cette
+                        convention plus précisément dans les détails.
+                    </p>
+
+                    <figure>
+                        <img src="img/Elizabeth_Cady_Stanton/Livre.svg" alt="Livre “The Myth of Seneca Falls” ">
+                        <figcaption>Livre “The Myth of Seneca Falls” </figcaption>
+                    </figure>
+                </section>
+
+                <section><h1 class="sous__titre__article">La déclaration de l’indépendance</h1>
+                    <div class="trait_dessus"></div>
+
+                    <p class="textes__article">Cette déclaration aussi appelé « Déclaration de
+                        l’indépendance » confirme le droit des femmes, afin qu’elles
+                        deviennent égales aux hommes et qu’elles possèdent
+                        les mêmes droits.
+                    </p>
+
+                    <figure>
+                        <img src="img/Elizabeth_Cady_Stanton/Emplacement_de_la_Convention_Seneca_Falls.svg" alt="Emplacement de la Convention Seneca Falls">
+                        <figcaption>Emplacement de la Convention Seneca Falls</figcaption>
+                    </figure>
+
+                    <p class="textes__article">Durant cette convention Elizabeth Cady Stanton et ses
+                        2 autres meneuses, reproche toute les actions
+                        discriminante, misogyne ou inégalitaire exercé par
+                        les hommes sur les femmes.
+                    </p>
+                </section>
+
+                <section><h1 class="sous__titre__article">Le combat efficace d'Elizabeth</h1>
+                    <div class="trait_dessus"></div>
+
+                    <p class="textes__article">Elizabeth Cady Stanton mourra le 26 octobre 1902 à
+                        New-York. Elizabeth laissa derrière elle son combat
+                        féministe.<br>
+                        <br>
+                        Une jeune femme venant d’une famille blanche et
+                        bourgeoise qui créera le mouvement féministe en
+                        Amérique.<br>
+                        <br>
+                        Ce mouvement donna la force et l'envie à pleins de
+                        nouvelles femmes. Ces nouveaux visages du féminisme
+                        qui auront comme modèle Elizabeth Cady Stanton.
+                    </p>
+                </section>
+            </article>
+                <section>
+                    <hr>
+                    <h2>Vous avez aimé?</h2>
+                    <h3>Pas de soucis. Il y en a d’autres<br>
+                        N’hésitez pas à lire nos deux<br>
+                        autres articles ci-dessous!
+                    </h3>
+            
+                    <article>
+                        <a href="Miley Cyrus , la nouvelle féministe.html">
+                        <h3>Miley Cyrus: la néo-féministe</h3>
+                            <img src="img/page accueuil/Miley Cyrus.svg"
+                            alt="Les tirs, tableau de Niki de Saint Phalle">
+                            <h4>Entre propos choquant et osé, découvrez comment<br>
+                                Miley Cyrus est devenue une icône du féminisme<br>
+                            </h4></a>
+                </section>
+        </main>
+
+        <footer>
+            <h2>À propos de moi</h2>
+            <h5>Bonjour ! 
+
+            Je me présente Saturni Loris en 1ère année de MMI (Métiers du Multimédia et d’Internet) à Montbéliard<br>
+            
+            Passioné de graphisme et d’audiovisuel.
+            Avoir l’occasion de créer un site web est une opportunité d’acquérir de nouvelles expériences!<br> 
+            
+            Portant une attention particulière sur les arts et le mouvement féministe. Créer un site internet qui reliait ces deux sujets, peut-être très judiceux.<br>
+            
+            Je vous laisse donc visiter mon site ! 
+            </h5>
+
+            <a href="index.html">
+            <img src="Bouton/logo blanc.svg" alt="Logo Femme et mieux"></a>
+
+
+
+            <h3><a href="Contact.html"> Donnez vos impressions</h3>
+            <h5>Formulaire de contact</h5></a>
+
+            <h3>Mentions légales</h3>
+            <adress>
+            Projet réalisé dans le cadre d'un exercice pédagogique au 
+            <a href="http://mmimontbeliard.com/"> département MMI de Montbéliard
+                <img src="Icone/logo mmi.svg" alt="IconMMI">  
+                <br></a>
+
+            </adress>
+
+            <h3>Me contacter</h3>
+            <h5>Loris SATURNI C1</h5>
+            <a href="mailto:saturniloris@gmail.com">saturniloris@gmail.com</a>
+            <h5>Langues</h5>
+
+            <h3>Me suivre</h3>
+            <li><a href="https://www.facebook.com/Loris.Saturni">
+            <img src="Icone/facebook 1.svg" alt="IconFacebook"></a>
+
+            <li><a href="https://www.instagram.com/loris_saturni_/">
+            <img src="Icone/instagram 1.svg" alt="IconInstragram"></a>
+        
+            <li><a href="https://pin.it/3Ky0pzi">
+            <img src="Icone/pinterest noir 1.svg" alt="IconPinterest"></a>
+
+            <li><a href="https://www.linkedin.com/in/loris-saturni-b96156225/">
+            <img src="Icone/logo-linkedin noir 1.svg" alt="IconLinkedin"></a> 
+
+            <h6>@loris_saturni_</h6>
+            <h6>2021</h6>
+        </footer>
+    </body>
+
+
+            

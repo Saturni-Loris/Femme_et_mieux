@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Femme et mieux">
+        <title>Comment le féminisme a t il trouvé sa place dans l'art</title>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Chargement de la librairie Alpine JS -->
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+
+    <body>
+        <header class="header" x-data="{ menuIsOpen : false }">
+
+            <div class="header__start">
+              <a href="/">
+                <img class="header__logo" src="Bouton/logo_blanc.svg" alt="logo Femme et mieux">
+              </a>
+            </div>
+
+            <!-- Fin du formulaire de recherche -->
+                    
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" 
+            :class="menuIsOpen && 'menu-btn--open'">
+    <span class="menu-btn__bar"></span>
+    </button>
+
+    <!-- Menu principal -->
+    <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+    <ul class="menu__list list-unstyled">
+        <li class="menu__item"><a class="menu__link__titre" href="index.html">Fr</a></li>
+        <li class="menu__item"><a class="menu__link__titre" href="index_english.html">En</a></li>
+        <div class="trait__menu"></div>
+
+        <li><a class="menu__link__titre">Nos articles</a></li>
+        <li class="menu__item"><a class="menu__link" href="Miley_Cyrus_,_la_nouvelle_féministe.html">Miley Cyrus: La  néo-féministe </a></li>
+        <li class="menu__item"><a class="menu__link" href="Le_combat_féministe_de_l_'_ombre.html">Elizabeth Cady Stanton:<br> Le combat de l’ombre</a></li>
+        <li class="menu__item"><a class="menu__link" href="Comment_le_féminisme_a_t_il_trouvé_sa_place_dans_l_art.html">Comment le féminisme a-t-il trouvé<br> sa place dans l’art ?</a></li>
+        <div class="trait__menu"></div>
+
+
+        <li class="menu__item"><a class="menu__link__titre" href="D_'_autres_projets.html">D'autres projets</a></li>
+        <div class="trait__menu"></div>
+        <li class="menu__item"><a class="menu__link__titre" href="En_savoir_plus.html">En savoir +</a></li>
+        <div class="trait__menu"></div>
+        <li class="menu__item"><a class="menu__link__titre" href="Contact.html">Contact</a></li>
+    </ul>
+    </nav>
+    <!-- Fin du menu principal -->
+        </header>
+                <main>
+                    <a href="#" class="btn">
+                        <img src="Bouton/retour_vers_le_haut.svg" class="icone">
+                    </a>
+                    <article>
+                        <h2>Comment le féminisme<br> a-t-il trouvé sa place<br> dans l'art?</h2>
+                        <div class="trait__article"></div>
+                        <section>
+                            <p class="introduction__article">
+                                Depuis la création de l'art, les 
+                                <span class=span__mots__cles>femmes</span> ont dû<br>
+                                combattre durement pour y être accepté.<br> Face aux
+                                règles et contraintes des hommes interdisant la
+                                femme dans <span class=span__mots__cles>l'art.</span><br> 
+                                Elles ont dû se battre pour y avoir
+                                leurs place. A travers des propos parfois abstrait ou
+                                choquant, tout était à prendre pour se faire<br>
+                                entendre, et connaître à leurs juste valeur.<br>
+                            </p>
+                        </section>
+
+                        <section><h1 class="sous__titre__article">De l'art antique au 21 -ème siècles</h1>
+                            <div class="trait__article"></div>
+                            <p class="textes__article">L'antiquité est un tournant majeur pour l'art.
+                                Des nouvelles types d'invention y sont imaginé.
+                                Des nouveaux moyens de peinture ou de sculpture.
+                                L'art commence à être de plus en plus important, dans
+                                la vie des citoyens de l'époque.
+                                Or les femmes sont déjà mises à l'écart. Il y a beaucoup
+                                moins de <span class=span__mots__cles>femmes artiste.</span>
+                            </p>
+
+                            <figure>
+                                <img class="img__article" src="img/Place_des_femmes_dans_l_'_art/antique.svg" alt="Œuvre antique">
+                                <figcaption>Œuvre antique</figcaption>
+                            </figure>
+
+                            <p class="textes__article">Femme qu'on juge faible, passive, ou juste bonne à
+                                procréer, mais pas aux <span class=span__mots__cles>arts.</span>
+                                Contrairement aux hommes que l'on met en valeurs,
+                                avec des adjectifs comme l'énergie, la créativité
+                                ou la force. 
+                                Les premières école d'art n'acceptent pas les femmes.
+                                Le seul moyens pour les femmes d'avoir la culture
+                                artistique qu'elles veulent. Était d'avoir
+                                un père artiste.
+                            </p>
+                        </section>
+
+                        <section><h1 class="sous__titre__article">L'erreur de Leonard de Vinci</h1>
+                            <div class="trait__article"></div>
+                            <p class="textes__article">Dans les années 1500. Lors de l'apogée de De Vinci.
+                                <span class=span__mots__cles>L'artiste</span> sort une phrase qui bouleversera l'art féminin.
+                                Alors qu'à cette époque les femmes commençaient à
+                                s'inscrire peu à peu dans les codes de l'art.
+                                Leonard De Vinci dit que la peinture recette du mental.
+                                <br> 
+                                Or les femmes, à cette époque, sont toujours vu comme
+                                inculte et exclusivement bonne aux tâches ménagère.
+                            </p>
+                                
+                            <figure>
+                                <img class="img__article" src="img/Place_des_femmes_dans_l_'_art/de_Vinci.svg" alt="Leonard de Vinci">
+                                <figcaption>Leonard de Vinci</figcaption>
+                            </figure>
+
+                            <p class="textes__article">Cette simple phrase annulera tous les efforts que les<
+                                femmes avaient mis en place pour se créer une place. 
+                                D'où l'influence de <span class=span__mots__cles>De Vinci.</span>
+                            </p>
+                        </section>
+                        
+                        <section><h1 class="sous__titre__article">L'émancipation artistique des femmes sous Louis XIV</h1>
+                            <div class="trait__article"></div>
+                            <p class="textes__article">C'est au 18 -ème siècle que les vrais premières 
+                                <span class=span__mots__cles>artiste femme</span> apparaissent.
+                                La mise en place des salons littéraire, et des grandes 
+                                écoles d'art va fortement accélérer l'émancipation 
+                                des femmes.<br>  
+                                <br> 
+                                Ce sont alors les premières académies qui ne font 
+                                pas de distinction de sexe. 
+                            </p>
+
+                            <figure>
+                                <img src="img/Place_des_femmes_dans_l_'_art/ecoles_des_beaux_arts.svg" alt="Ecole des beaux-arts, Paris">
+                                <figcaption><a href=https://beauxartsparis.fr/fr>
+                                Ecole des beaux-arts, </a>Paris</figcaption></a>
+                            </figure>
+
+                            <p class="textes__article">Une des premières femmes bouleversante. Est 
+                                Rosalba Carriera, sui réinventa la pastel. Qui grâce à 
+                                elle de nouveaux types de peintures venu au monde.  
+                                <br> 
+                                Angelica Kauffmann est alors la première femme à faire 
+                                des peintures d'histoire. Elle deviendra donc la plus 
+                                grande peintre du <span class=span__mots__cles>néo-classicisme</span> étant de plus 
+                                féministe. 
+                                On ira même parler d'elle en cours d'art dans les 
+                                classes masculine. Ce qui était impensable à l'époque. 
+                            </p>
+
+                            <figure>
+                                <img src="img/Place_des_femmes_dans_l_'_art/Rosalba_Carriera.svg" alt="Rosalba Carriera">
+                                <figcaption>Rosalba Carriera</figcaption>
+                            </figure>
+
+                            <p class="textes__article">Afin d'être reconnue en peinture d'art à l'époque, 
+                                un type de peinture très complexe. Il fallait suivre des 
+                                cours de nu afin de connaître le physique de l'humain. 
+                                Pour le représenter le mieux possible. 
+                                Or à cette époque les cours de nu pour 
+                                <span class=span__mots__cles>femmes </span>
+                                sont formellement interdits. 
+                                <br> 
+                                Elle deviendra la femme la plus importante du 
+                                néo-classicisme par son apprentissage autodidacte. 
+                            </p>
+                        </section>
+
+                        <section><h1 class="sous__titre__article">De nouvelles régressions artistique</h1>
+                            <div class="trait__article"></div>
+                            <p class="textes__article">Alors que le rôles des femmes est de plus en plus
+                                important aux Etats-Unis. En Europe la régression est
+                                de plus en plus importante.
+                                Après la révolution, les femmes ne sont plus
+                                considérées comme citoyenne. Elles ne peuvent donc
+                                plus aller aux écoles d'art. Et ont besoin d'homme
+                                artiste important pour exercer leurs art.
+                                <br>
+                                De plus, sous le règne de <span class=span__mots__cles>Napoléon</span>
+                                au 19 -ème siècle.
+                                Les femme sont mis sous la tutelle de leurs mari.
+                                Ce qui rend la création d'art presque impossible.
+                                <br>
+                                Il faudra donc attendre une femme qui sait comment
+                                choquer pour se faire entendre.
+                            </p>  
+                                
+                            <figure>
+                                <img src="img/Place_des_femmes_dans_l_'_art/Rosa_bonheur.svg" alt="Rosa Bonheur">
+                                <figcaption>Rosa Bonheur</figcaption>
+                            </figure>
+
+                            <p class="textes__article">Rosa Bonheur porte des jeans et pas des robes, fume,
+                                assument son homosexualité. Elle profite de la
+                                polémique qu'elle créer pur faire entendre son 
+                                <span class=span__mots__cles>art.</span>
+                                <br>
+                                Audace qui va payer, car elle sera la première femme
+                                à obtenir une légion d'honneur. En peignant des animaux
+                                elle deviendra une femme si connu qu'elle donnera
+                                envie à d'autres de faire entendre leurs art.
+                            </p>
+
+                            <figure>
+                                <img src="img/Place_des_femmes_dans_l_'_art/tableau_bovin.svg" alt="Labourage Nivernais, Rosa Bonheur">
+                                <figcaption>Labourage Nivernais, Rosa Bonheur</figcaption>
+                            </figure>
+
+                            <p class="textes__article">Malgré leurs acharnement, aucune autres femme
+                                réussira à être si connu. Elles ont trop de freins sur
+                                leurs chemin. Se rapprochant donc des années 1900,
+                                le point de rupture arriva.
+                                <br>
+                                Les <span class=span__mots__cles>femmes</span> expriment leurs mécontentement, car elles
+                                ne sont pas moins talentueuses que les hommes.
+                                Elles manquent simplement de <span class=span__mots__cles>reconnaissance.</span>
+                            </p>
+                        </section>
+
+                        <section><h1 class="sous__titre__article"><a href=https://fr.wikipedia.org/wiki/Tirs_(Niki_de_Saint_Phalle)>
+                            Les tirs</a> de Niki de Saint Phalle</h1>
+                            <div class="trait__article"></div>
+
+                            <figure>
+                                <img src="img/Place_des_femmes_dans_l_'_art/Les_tirs.svg" alt="Grand tirs, Niki de Saint Phalle">
+                                <figcaption>Grand tirs, Niki de Saint Phalle</figcaption>
+                            </figure>
+
+                            <p class="textes__article"><span class=span__mots__cles>Niki de Saint Phalle</span> va aider les femmes féministe
+                                à recevoir cette reconnaissance. Elle est une des première
+                                femmes féministe à se faire tant connaitre.
+                                <br>
+                                Dans son œuvre Les tirs, sorti en 1961. Nika brandit
+                                une armes tout en tirant sur des poches de peinture.
+                                L'artiste casse les clichés qui autorise les armes
+                                seulement aux hommes. Elle met en avant la femme
+                                au pouvoir.
+                            </p>
+
+                            <figure>
+                                <img src="img/Place_des_femmes_dans_l_'_art/Niki_de_Saint_Phalle_1964.svg" alt="Niki de Saint Phalle, 1964">
+                                <figcaption>Niki de Saint Phalle,1964</figcaption>
+                            </figure>
+
+                            <p class="textes__article">Elle créera une séries de tableaux de son œuvre
+                                Les tirs. Ces œuvres qui mettent les femmes et hommes
+                                sur la même marche.
+                                <br>
+                                Prouvant que les femmes peuvent exercer les mêmes
+                                tâches que les hommes. De plus, ce sont les femmes
+                                qui étaient dans les usines lors de la guerre.
+                                <br>
+                                Quand les hommes combattaient, les femmes
+                                travaillais à créer des armes et balles.
+                                Le clichés de l'homme fort et la femmes
+                                faible meurt donc. Et Niki de Saint Phalle réussi à
+                                égaliser les hommes et femmes dans <span class=span__mots__cles>l'art.</span>
+                            </p>
+
+                            <figure>
+                                <img src="img/Place_des_femmes_dans_l_'_art/Sceance_de_tirs.svg" alt="Scéance de tirs de peinture">
+                                <figcaption>Scéance de tirs de peinture</figcaption>
+                            </figure>
+
+                            <p class="textes__article">Les femmes et le féminisme ont donc totalement
+                                leurs place dans l’arts.
+                                <br>
+                                Les femmes ont réussi à prouver qu’elles possèdent
+                                tout autant de compétences que les hommes.
+                                En créant même parfois leurs <span class=span__mots__cles>propre style.</span>
+                            </p>
+                        </section>
+                    </article>
+
+                    <div class="trait__article"></div>
+                    <h2>Vous avez aimé?</h2>
+                    <h3>Pas de soucis. Il y en a d’autres
+                        N’hésitez pas à lire nos deux
+                        autres articles ci-dessous!
+                    </h3>
+
+                    <article>
+                        <a href="Comment le féminisme a t il trouvé sa place dans l'art.html">
+                        <h3>Comment le féminisme a-t-il trouvé sa place dans l’art ?</h3>
+                            <img src="img/Place_des_femmes_dans_l_'_art/Les_tirs_dern.svg" 
+                            alt="Les tirs, tableau de Niki de Saint Phalle">
+                            <h4>Découvrez comment les femmes ont réussi à
+                                trouver leur place dans l'art. Après leurs nombreux
+                                combats
+                            </h4></a>
+                    </article>
+                </main>
+
+                <footer>
+                    <h3>Me contacter</h3>
+                    <h5>Loris SATURNI C1</h5>
+                    <a href="mailto:saturniloris@gmail.com">saturniloris@gmail.com</a>
+                    <h5>Langues</h5>
+
+                    <h3>Me suivre</h3>
+                    <li><a href="https://www.facebook.com/Loris.Saturni">
+                    <img src="Icone/facebook 1.svg" alt="IconFacebook"></a>
+
+                    <li><a href="https://www.instagram.com/loris_saturni_/">
+                    <img src="Icone/instagram 1.svg" alt="IconInstragram"></a>
+                            
+                    <li><a href="https://pin.it/3Ky0pzi">
+                    <img src="Icone/pinterest noir 1.svg" alt="IconPinterest"></a>
+
+                    <li><a href="https://www.linkedin.com/in/loris-saturni-b96156225/">
+                    <img src="Icone/logo-linkedin noir 1.svg" alt="IconLinkedin"></a> 
+                </footer> 
+            </body>
+</html>
+
+                
+
+
+                
+
+
+                
