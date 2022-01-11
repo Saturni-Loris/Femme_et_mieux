@@ -272,6 +272,11 @@ margin-top: 1px;
       font-family: var(--font-sans-serif);
     }
 
+    .captcha{
+      height: 70px;
+      margin-left: 0px;
+    }
+
     .aimez__vous{
         width: 60%;
         border: 2px solid rgb(235, 12, 12);
